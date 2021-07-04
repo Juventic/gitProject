@@ -112,7 +112,7 @@ def station_stats(df):
     # display most commonly used start station
     print("The most commonly used start station is ", df['Start Station'].mode()[0], "\n")
 
-    # display most commonly used end station
+    # display most commonly used end stations
     print("The most commonly used end station is ", df['End Station'].mode()[0], "\n")
 
     # display most frequent combination of start station and end station trip
@@ -184,7 +184,6 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-
 
 if __name__ == "__main__":
 	main()
